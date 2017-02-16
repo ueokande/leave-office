@@ -1,0 +1,19 @@
+{
+  "name": "leave-office",
+  "version": "0.0.1",
+  "description": "Notify train time for leaving the office",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ueokande/leave-office.git"
+  },
+  "author": "Shin'ya Ueoka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ueokande/leave-office/issues"
+  },
+  "homepage": "https://github.com/ueokande/leave-office#readme"
+}
