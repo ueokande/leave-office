@@ -2,8 +2,9 @@
   "name": "leave-office",
   "version": "0.0.1",
   "description": "Notify train time for leaving the office",
-  "main": "index.js",
+  "main": "main/index.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ueokande/leave-office/issues"
   },
-  "homepage": "https://github.com/ueokande/leave-office#readme"
+  "homepage": "https://github.com/ueokande/leave-office#readme",
+  "devDependencies": {
+    "electron": "^1.4.15"
+  }
 }
