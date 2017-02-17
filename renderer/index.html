@@ -5,6 +5,12 @@
     <title>Leave Office</title>
   </head>
   <body>
-    <h1>Hello electron</h1>
+    <div id='main'></div>
+    <script>
+      window.onload = function() {
+        require('babel-register')();
+        require('./index');
+      }
+    </script>
   </body>
 </html>
