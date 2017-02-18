@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
+import Main from './main';
 
-import List from './list';
+require('react-tap-event-plugin');
 
-render(<List/>, document.getElementById('main'))
+render(<Main/>, document.getElementById('main'))
