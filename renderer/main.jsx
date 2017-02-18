@@ -1,18 +1,33 @@
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import AppBar from 'material-ui/AppBar';
+import Timetable from './timetable';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 injectTapEventPlugin();
 
 export default class Main extends React.Component {
+
+  componentDidMount() {
+    this.refs.timetable.setState({
+      entries: [{
+      key: 1,
+      arrival_time: new Date('2017-02-18T21:25'),
+      departure_time: new Date('2017-02-18T21:36'),
+    }, {
+      key: 2,
+      arrival_time: new Date('2017-02-18T21:31'),
+      departure_time: new Date('2017-02-18T21:42'),
+    }, {
+      key: 3,
+      arrival_time: new Date('2017-02-18T21:37'),
+      departure_time: new Date('2017-02-18T21:48'),
+    }]});
+  }
+
   render () {
     return (
       <MuiThemeProvider>
-        <AppBar
-          title="Title"
-          iconClassNameRight="muidocs-icon-navigation-expand-more"
-        />
+        <Timetable ref="timetable"/>
       </MuiThemeProvider>
     );
   }
