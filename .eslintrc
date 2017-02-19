@@ -25,10 +25,12 @@
       "error",
       "always", { "arraysInObjects": false, "objectsInObjects": false }
     ],
+    "object-curly-newline": "off",
     "object-property-newline": "off",
     "padded-blocks": "off",
     "prefer-template": "off",
     "quote-props": ["error", "as-needed"],
+    "require-jsdoc": "off",
     "sort-imports": "off",
     "sort-keys": "off",
     "sort-vars": "off",

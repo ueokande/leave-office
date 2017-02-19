@@ -7,8 +7,10 @@ injectTapEventPlugin();
 
 export default class Main extends React.Component {
 
-  componentDidMount() {
-    this.timetable.setState({
+  constructor() {
+    super();
+
+    this.state = {
       entries: [{
         key: 1,
         arrivalTime: new Date("2017-02-18T21:25"),
@@ -22,13 +24,16 @@ export default class Main extends React.Component {
         arrivalTime: new Date("2017-02-18T21:37"),
         departureTime: new Date("2017-02-18T21:48")
       }]
-    });
+    };
   }
 
   render() {
     return (
       <MuiThemeProvider>
-        <Timetable ref={(c) => { this.timetable = c; }} />
+        <Timetable
+          ref={(c) => { this.timetable = c; }}
+          entries={this.state.entries}
+        />
       </MuiThemeProvider>
     );
   }
