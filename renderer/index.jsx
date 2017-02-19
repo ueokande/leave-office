@@ -1,7 +1,8 @@
-import React from 'react'
-import { render } from 'react-dom'
-import Main from './main';
+import React from "react";
+import { render } from "react-dom";
 
-require('react-tap-event-plugin');
+import Main from "./main";
 
-render(<Main/>, document.getElementById('main'))
+require("react-tap-event-plugin");
+
+render(<Main />, document.getElementById("main"));

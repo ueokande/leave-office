@@ -5,6 +5,7 @@
   "main": "main/index.js",
   "scripts": {
     "start": "electron .",
+    "eslint": "eslint renderer/**/*.{js,jsx} main/**/*.{js.jsx}",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +25,8 @@
     "babel-preset-react": "^6.23.0",
     "babel-register": "^6.23.0",
     "electron": "^1.4.15",
+    "eslint": "^3.15.0",
+    "eslint-plugin-react": "^6.10.0",
     "material-ui": "^0.17.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
