@@ -28,7 +28,7 @@ export default class Main extends React.Component {
   render() {
     return (
       <MuiThemeProvider>
-        <Timetable ref={(c) => { this.timeline = c; }} />
+        <Timetable ref={(c) => { this.timetable = c; }} />
       </MuiThemeProvider>
     );
   }

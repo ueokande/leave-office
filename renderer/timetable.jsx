@@ -13,10 +13,10 @@ export default class Timetable extends React.Component {
       <List>
         {
            this.state.entries.map((entry) => {
-             const text = entry.arrival_time.getHours() + ":" +
-                     entry.arrival_time.getMinutes() + " - " +
-                     entry.departure_time.getHours() + ":" +
-                     entry.departure_time.getMinutes();
+             const text = entry.arrivalTime.getHours() + ":" +
+                     entry.arrivalTime.getMinutes() + " - " +
+                     entry.departureTime.getHours() + ":" +
+                     entry.departureTime.getMinutes();
 
              return (
                <ListItem key={entry.key} primaryText={text} />
